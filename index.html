@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <a href="#exploration">exploration</a>
-                <a href="#aircraft">aircraft</a>
+                <a href="#spacecraft-gallery">spacecraft</a>
                 <a href="#facts">facts</a>
                 <a href="#gallery">gallery</a>
             </nav>
@@ -21,20 +21,22 @@
         <section class="hero">
             <h1>SATURN</h1>
             <p>The Jewel of the solar system — Saturn is a vast world of storms, ice, and gravity, crowned by the most spectacular ring system known to science</p>
-            
         </section>
     </main>
    
+
    
     <section id="exploration" class="exploration">
         <div class="exploration-images">
             <img src="./bildemappe/cassini-launch.jpg" alt="Cassini launch" class="img-back">
-            <img src="./bildemappe/cassini-titan-crop.webp" alt="Cassini spacecraft near Saturn" class="img-front">
+            <img src="./bildemappe/cassini-titan-cropped.webp" alt="Cassini spacecraft near Saturn" class="img-front">
         </div>
+
         <div class="exploration-text">
-            <h2>Exploration</h2>
+            <h1>Exploration</h1>
+            
             <article class="spacecraft-text">
-                <h3>Four robotic spacecraft have visited Saturn.</h3>
+                <p>Four robotic spacecraft have visited Saturn.</p>
                 <p>
             NASA's Pioneer 11 provided the first close look in September 1979. NASA's twin Voyager
             1 and Voyager 2 spacecraft followed up with flybys nine months apart in 1980 and 1981. Each flyby
@@ -44,7 +46,6 @@
                  <p>
             Cassini studied Saturn from orbit for 13 years before its human engineers on Earth transformed it into an atmospheric probe for its spectacular final plunge into the planet in September 2017. Cassini also carried ESA's Huygens Probe, which landed on Saturn's moon Titan in 2005.
                  </p>
-
                  <p>
             From Earth, astronomers have studied Saturn with telescopes for centuries. And the Hubble Space Telescope continues to uncover new details from its perch in Earth orbit.
                 </p>
@@ -53,36 +54,43 @@
     </section>
 
     <section id="spacecraft-gallery" class="spacecraft-gallery">
+       <div class="column">
         <figure>
             <img src="./bildemappe/Pioneer.jpg" alt="">
             <figcaption>Pioneer</figcaption>
         </figure>
+          <figure>
+            <img src="./bildemappe/voyager 2.webp" alt="">
+            <figcaption>Voyager 2</figcaption>
+        </figure>
+       </div>
+       
 
+       <div class="column">
         <figure>
             <img src="./bildemappe/voyager-illustration-with-stars-1041.webp" alt="">
             <figcaption>Voyager</figcaption>
         </figure>
 
         <figure>
-            <img src="./bildemappe/voyager 2.webp" alt="">
-            <figcaption>Voyager 2</figcaption>
-        </figure>
-
-        <figure>
             <img src="./bildemappe/Cassini.jpeg" alt="">
             <figcaption>Cassini</figcaption>
         </figure>
-    
+       </div>
     </section>
 
-    <section id="facts-rings" class="facts-rings">
+
+        
+
+
+    <section id="facts" class="facts-part-one">
         <header class="cover">
-            <img src="./bildemappe/PIA22766.jpg" alt="">
             <h1>Facts</h1>
+
+            <img src="./bildemappe/PIA22766.jpg" alt="">
         </header>
 
-        <div class="content-rings">
-         
+        <div class="card-rings">
             <article class="fact-one">
                 <h2>Rings</h2>
                 <p>
@@ -93,16 +101,21 @@
             <article>
                 <p>
             Saturn's ring system extends up to 175,000 miles (282,000 kilometers) from the planet, yet the vertical height is typically about 30 feet (10 meters) in the main rings. Named alphabetically in the order they were discovered, the rings are relatively close to each other, with the exception of a gap measuring 2,920 miles (4,700 kilometers) in width called the Cassini Division that separates Rings A and B. The main rings are A, B, and C. Rings D, E, F, and G are fainter and more recently discovered.
+                </p>
+                <p>
 Starting at Saturn and moving outward, there is the D ring, C ring, B ring, Cassini Division, A ring, F ring, G ring, and finally, the E ring. Much farther out, there is the very faint Phoebe ring in the orbit of Saturn's moon Phoebe.
+
                 </p>
             </article>
         </div>
     </section>
 
-    <section class="other-facts">
+
+
+    <section class="facts-part-two">
         <div class="left-column">
             <article class="atmosphere">
-                <img src="./bildemappe/PIA17175~orig.jpg" alt="">
+                <img src="./bildemappe/PIA17175~cropped.jpg" alt="">
                 <div class="atmosphere-text">
                     <h2>Atmosphere</h2>
                     <p>
@@ -117,7 +130,6 @@ Starting at Saturn and moving outward, there is the D ring, C ring, B ring, Cass
                 
                 </div>
             </article>
-
         </div>
 
         <div class="right-column">
@@ -143,17 +155,37 @@ Starting at Saturn and moving outward, there is the D ring, C ring, B ring, Cass
                     </p>
                 </div>
             </article>
-
         </div>
-
-
-
     </section>
 
 
     <section id="gallery" class="gallery">
+        <div class="gallery-item">
+            <img src="./bildemappe/titan_carousel2.jpg" alt="">
+        </div>
 
+        <div class="gallery-item">
+            <img src="./bildemappe/boliviainteligente-7fe69R9UufA-unsplash.jpg" alt="">
+        </div>
+        
+        <div class="gallery-item">
+         <img src="./bildemappe/Saturn_backlit_by_the_Sun.jpeg" alt="">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="./bildemappe/edu-solar-system-large.png" alt="">
+        </div>
+        
+        <div class="gallery-item">
+            <img src="./bildemappe/boliviainteligente-86Ualn5mbFY-unsplash.jpg" alt="">
+        </div>
+
+        <div class="gallery-item">
+            <img src="./bildemappe/31_cassini_ringplane_v02b1.jpg" alt="">
+        </div>
     </section>
+
+    <!-- Image credit: https://science.nasa.gov/,  https://unsplash.com -->
 
 </body>
 </html>

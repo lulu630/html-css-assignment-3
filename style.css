@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap'); */
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +11,40 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --text-font: "Inconsolata";
+    --heading-font: "Krona One";
+    --text-color: rgb(255, 255, 255);
+    --text-size: 1.9rem;
+    --h1-size: 4rem; 
+    --h2-size: 2rem;
+}
+
+
+
+p, figure {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: var(--text-size);
+    padding-bottom: 1rem;
+
+}
+
+h1{
+    font-family: var(--heading-font);
+    font-size: var(--h1-size);
+    color: var(--text-color);
+}
+
+h2{
+    font-family: var(--heading-font);
+    font-size: var(--h2-size);
+    color: var(--text-color);
+    padding-bottom: 1rem;
+
+}
+
+
 main {
     background-image: url(./bildemappe/PIA17474~large.jpg);
     background-size: cover;
@@ -20,93 +53,235 @@ main {
 }
 
 nav {
-display: flex;
-justify-content: center;
-font-family: Inconsolata;
-font-size: 2rem;
-gap: 8rem;
+    display: flex;
+    justify-content: center;
+    font-family: Inconsolata;
+    font-size: 2rem;
+    gap: 8rem;
 }
 
 nav a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     margin-top: 3rem;
 }
 
 a:hover {
-  color: ;
-}
-
-
-.hero h1{
-        font-family: Krona One;
-        font-size: 8rem;
-        margin-top: 15rem;
-        margin-left: 5rem;
-
-}
-
-.hero p{
-text-align: right;
-max-width: 45rem;
-font-family: Inconsolata;
-font-size: 2.5rem;
-margin-left: 3rem;
-
+    text-decoration-line: underline;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: x-large;
-    color: aliceblue;
-    padding-left: 10rem;
-    padding-left: 5rem;
+    justify-content: flex-start;
+    padding-top: 20rem;
+    align-items: flex-end;
+    min-height: 100vh;
+    width: 100%;
+    max-width:60rem;
+    text-align: right;
+    padding-left: 8rem;
+}
 
+
+.hero h1{
+    font-size: 8rem;
+    
+}
+
+.hero p{
+    font-size: 2.5rem;
 }
 
 
 .exploration{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: rgb(34, 31, 24);
-    min-height: 100vh;
-
+    max-height: 100vh;
 }
 
-.exploration-images{
-display: flex;
-justify-content: start;
-
-}
 
 .exploration-text{
     display: flex;
-    justify-content: end;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10rem 5rem;
+    gap: 6rem;
 }
 
-section .exploration-images{
+
+.exploration-text h2{
+    align-self: flex-end;
+}
+
+
+.spacecraft-text{
+    background-color: rgb(89, 84, 62);
+    width: 1000px;
+    padding: 50px 40px;
+
+}
+
+
+.exploration .exploration-images{
     position: relative;
-    width: 600px;
+    width: 800px;
+    margin-top: 5rem;
 
 }
 
 
 .exploration-images img{
     display: block;
-    width: 100%;
 }
 
 .img-back{
     position: relative;
-
+    width: 100%;
 }
 
 .img-front{
     position: absolute;
-    bottom: -250px;
-    right: -250px;
-    width: 70%;
+    bottom: -400px;
+    right: -90px;
+    width: 60%;
+    height: auto;
+}
 
+
+
+.spacecraft-gallery{
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+    align-items: center;
+    width: 100%;
+    background-image: url(./bildemappe/neon-sumer-K8eWS_abimM-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+
+.spacecraft-gallery figure{
+    width: 500px;
+}
+
+
+.spacecraft-gallery img{
+    width: 550px;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+
+
+.facts-part-one{
+    min-height: 100vh;
+    background-image: url(./bildemappe/neon-sumer-K8eWS_abimM-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+
+.facts-part-one .cover img{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+.card-rings{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: rgb(57, 75, 89);
+}
+
+
+.facts-part-two{
+    display: flex;
+    padding: 0 5%;
+    min-height: 100vh;
+    background-color: rgb(57, 75, 89);
+    gap: 5rem;
+
+}
+
+
+.atmosphere{
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem; */
+    gap: 3rem;
+}
+
+
+ .moons img{
+      width: 50%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+
+.structure img{
+    width: 50%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    }
+
+
+.structure,
+.moons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;    
+}
+
+
+.facts-part-two .left-column{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.facts-part-two .right-column{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+
+.gallery{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10%;
+    padding: 4rem 5rem;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./bildemappe/neon-sumer-K8eWS_abimM-unsplash.jpg);
+    background-size: cover;  
+}
+
+
+.gallery-item img{
+    width: 500px;
+    height: 400px;
 }
